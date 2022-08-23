@@ -3,11 +3,11 @@
 $dark_1: #121212;
 $color_btn: #E4C1AE;
 
-.con {
+.container {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    width: 1440px;
+    max-width: 1440px;
     height: 960px;
 
 background: #FFFFFF;
@@ -98,5 +98,12 @@ font-weight: 700;
 font-size: 16px;
 line-height: 100%;
 color: #FFFFFF;
+
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        background: orange;
+    }
 
 }
