@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+.con {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  height: 960px;
+  background: #FFFFFF;
+}
+
+.hero_image {
+  position: absolute;
+  width: 505px;
+  height: 330px;
+  left: 230px;
+  top: 96px;
+  background-size: cover;
+  background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg");
+}
+
+.content {
+  position: absolute;
+  width: 380px;
+  height: 250px;
+  left: 830px;
+  top: 136px;
+}
+
+.title {
+  left: calc(50% - 380px/2 + 300px);
+  top: calc(50% - 50px/2 - 319px);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 120%;
+  color: #121212;
+}
+
+.text1 {
+  left: calc(50% - 380px/2 + 300px);
+  top: calc(50% - 96px/2 - 222px);
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #121212;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 16px 40px;
+  gap: 10px;
+  width: 128px;
+  height: 48px;
+  left: 830px;
+  top: 338px;
+  background: #E4C1AE;
+  border-radius: 32px;
+  border-color: #E4C1AE;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
