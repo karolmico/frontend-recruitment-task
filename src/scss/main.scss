@@ -2,65 +2,50 @@
 
 $dark_1: #121212;
 $color_btn: #E4C1AE;
+$color_bcg: #FFFFFF;
+$color_btn_hover: #AD6B40;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .container {
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1440px;
-    height: 960px;
-
-background: #FFFFFF;
-  }
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 96px auto 0;
+  background: $color_bcg;
+}
   
   .hero_image {
-
-    position: absolute;
     width: 505px;
     height: 330px;
-    left: 230px;
-    top: 96px;
     background-size: cover;
 
-    background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg");
+    background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg");
 
 }
 
 .content {
-    position: absolute;
     width: 380px;
-    height: 250px;
-    left: 830px;
-    top: 136px;
+    margin-left: 95px;
 }
 
 .title {
-
-    //position: absolute;
-    //width: 380px;
-    //height: 50px;
-    left: calc(50% - 380px/2 + 300px);
-    top: calc(50% - 50px/2 - 319px);
-    
-    
+    margin-bottom: 24px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     font-size: 42px;
     line-height: 120%;
-    
-    
     color: $dark_1; 
 }
 
 
   .text1 {
-    //position: absolute;
-    //width: 380px;
-    //height: 96px;
-    left: calc(50% - 380px/2 + 300px);
-    top: calc(50% - 96px/2 - 222px);
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
@@ -70,26 +55,13 @@ background: #FFFFFF;
     color: $dark_1;
   }
   
-
-
 .button {
-
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 16px 40px;
-gap: 10px;
-
-//position: absolute;
 width: 128px;
 height: 48px;
-left: 830px;
-top: 338px;
-
-
+margin-top:32px;
 background: $color_btn;
 border-radius: 32px;
-border-color: $color_btn;
+border: none;
 
 //Text style
 font-family: 'Roboto';
@@ -97,13 +69,41 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 100%;
-color: #FFFFFF;
+color: $color_bcg;
+
+&:hover {
+  cursor: pointer;
+  background-color: $color_btn_hover;
+}
 
 }
 
-@media screen and (min-width: 1200px) {
-    .container {
-        background: orange;
-    }
+// responsiveness
+@media screen and (max-width: 980px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
 
+  }
+
+  .content {
+    margin-top: 50px;
+    margin-left: 0px;
+    display: grid;
+  }
+
+  .text1 {
+    text-align: center;
+  }
+
+  .button {
+    margin: 32px auto;
+  }
+
+  .title {
+    text-align: center;
+  }
 }
+

@@ -1,34 +1,33 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .container {
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   max-width: 1440px;
-  height: 960px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 96px auto 0;
   background: #FFFFFF;
 }
 
 .hero_image {
-  position: absolute;
   width: 505px;
   height: 330px;
-  left: 230px;
-  top: 96px;
   background-size: cover;
-  background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1400.jpg");
+  background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg");
 }
 
 .content {
-  position: absolute;
   width: 380px;
-  height: 250px;
-  left: 830px;
-  top: 136px;
+  margin-left: 95px;
 }
 
 .title {
-  left: calc(50% - 380px/2 + 300px);
-  top: calc(50% - 50px/2 - 319px);
+  margin-bottom: 24px;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -38,8 +37,6 @@
 }
 
 .text1 {
-  left: calc(50% - 380px/2 + 300px);
-  top: calc(50% - 96px/2 - 222px);
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 300;
@@ -49,18 +46,12 @@
 }
 
 .button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 16px 40px;
-  gap: 10px;
   width: 128px;
   height: 48px;
-  left: 830px;
-  top: 338px;
+  margin-top: 32px;
   background: #E4C1AE;
   border-radius: 32px;
-  border-color: #E4C1AE;
+  border: none;
   font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
@@ -69,8 +60,30 @@
   color: #FFFFFF;
 }
 
-@media screen and (min-width: 1200px) {
+.button:hover {
+  cursor: pointer;
+  background-color: #AD6B40;
+}
+
+@media screen and (max-width: 980px) {
   .container {
-    background: orange;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  .content {
+    margin-top: 50px;
+    margin-left: 0px;
+    display: grid;
+  }
+  .text1 {
+    text-align: center;
+  }
+  .button {
+    margin: 32px auto;
+  }
+  .title {
+    text-align: center;
   }
 }
