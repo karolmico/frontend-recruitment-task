@@ -87,3 +87,36 @@
     text-align: center;
   }
 }
+
+.container_popup {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #FFFFFF;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.popup {
+  position: relative;
+  height: 210px;
+  width: calc(100% - 50px);
+  max-width: 920px;
+  background-color: #FFFFFF;
+}
+
+.close_icon {
+  position: absolute;
+  top: calc(46px - 10px);
+  right: calc(46px - 10px);
+  padding: 10px;
+  cursor: pointer;
+}
+
+.cross {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000;
+}
