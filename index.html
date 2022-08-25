@@ -18,21 +18,22 @@
 
             <p class="text1">Infinitely scalable, feature-rich and cloud-native data management and protection for modern and legacy infrastructures and SaaS platforms, managed via a single app with no hardware required.</p>
 
-            <button type="button" class="button" onclick="show_popup()">Button</button>
+            <button type="button" class="button" id="button" onclick="show_popup()">Button</button>
         </div>
 
     </div>
-    <div class="container_popup" id="container_popup">
-        <div class="popup">
-            <h1 class="popup_title">Alert!</h1>
-            <p class="popup_content">You have clicked <span id="clicks"></span> times to related button.</p>
+    <div class="popup_background" id="popup_background">
+        <div class="popup" id="popup">
+            <h1 class="popup_title" id="popup_title" >Alert!</h1>
+            <p class="popup_content" id="popup_content">You have clicked <b><span id="clicks"></span> times</b> to related button.</p>
             <button class="button_reset" id="button_reset" onclick="counter_reset()">Reset</button>
             <div class="close_icon">
-                <span class="cross" onclick="close_popup_cross()">&times;</span>
+                <span class="cross" id="cross" onclick="close_popup_cross()">&times;</span>
             </div>
-        </div>        
+        </div>    
+    </div>    
 
-    </div>
+    
 
     <script type="text/javascript" src="src/js/main.js"></script>
 </body>
