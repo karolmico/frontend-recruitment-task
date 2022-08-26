@@ -24,7 +24,6 @@ $color_btn_hover: #AD6B40;
     width: 505px;
     height: 330px;
     background-size: cover;
-
     background-image: url("../../images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg");
 
 }
@@ -62,8 +61,6 @@ margin-top:32px;
 background: $color_btn;
 border-radius: 32px;
 border: none;
-
-//Text style
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 700;
@@ -130,7 +127,6 @@ color: $color_bcg;
   width: calc(100% - 50px);
   max-width: 920px;
   background-color: $color_bcg;
-  //background-color: rgba(0,0,0,0.4);
 }
 
 .popup_title {
